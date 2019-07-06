@@ -4,6 +4,7 @@ date: 2019-07-06T19:22:27.650Z
 link: 'http://google.com'
 client: test
 description: cdscdssd cdscdscds cdscdscsd cdscdscdssdcsd
+image: /img/about-direct-sourcing.jpg
 gallery:
   - caption: cds cdsocds ockdpskc dspokc dspokcdpsokc dpskcopds kcopds kcpdkoscds pkcds
     image: /img/about-jumbotron.jpg
