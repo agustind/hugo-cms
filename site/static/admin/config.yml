@@ -3,23 +3,34 @@ backend:
 
 media_folder: "site/static/img" # Folder where user uploaded files should go
 public_folder: "img"
+logo_url: "https://demux.io/images/logo.png"
+show_preview_links: false
+
 
 collections: # A list of collections the CMS should be able to edit
   - name: "projects" # Used in routes, ie.: /admin/collections/:slug/edit
-    label: "Project" # Used in the UI, ie.: "New Post"
-    folder: "site/content/project" # The path to the folder where the documents are stored
+    label: "Projects" # Used in the UI, ie.: "New Post"
+    editor:
+      preview: false
+    label_singular: "Project"
+    folder: "site/content/projects" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     fields: # The fields each document in this collection have
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
-      - {label: "Intro Blurb", name: "description", widget: "text"}
+      - {label: "URL", name: "link", widget: "url"}
+      - {label: "Client", name: "client", widget: "string"}
+      - {label: "Intro Blurb", name: "description", widget: "string"}
       - {label: "Image", name: "image", widget: "image", required: false}
       - {label: "Gallery", name: "gallery", widget: "list", fields: [
               {label: "Image", name: "image", widget: "image", required: false},
               {label: "Caption", name: "caption", widget: "text", required: false}]}
       - {label: "Body", name: "body", widget: "markdown"}
   - name: "post" # Used in routes, ie.: /admin/collections/:slug/edit
-    label: "Post" # Used in the UI, ie.: "New Post"
+    label: "Blog" # Used in the UI, ie.: "New Post"
+    label_singular: "Post" # Used in the UI, ie.: "New Post"
+    editor:
+      preview: false
     folder: "site/content/post" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     fields: # The fields each document in this collection have
@@ -28,6 +39,14 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Intro Blurb", name: "description", widget: "text"}
       - {label: "Image", name: "image", widget: "image", required: false}
       - {label: "Body", name: "body", widget: "markdown"}
+  - name: "options"
+    label: "Options"
+    files:
+      - file: "site/options/_general.md"
+        label: "General"
+        name: "general"
+        fields:
+          - {label: "Site description", name: description, widget: string}
   - name: "pages"
     label: "Pages"
     files:

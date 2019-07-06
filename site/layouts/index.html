@@ -1,7 +1,11 @@
 {{ define "main" }}
 
-
-	{{ partial "portfolio" . }}
-
-
+	{{ range .Data.projects }}
+		<div>
+			cdscdscds
+			<h4>{{ .title }}</h4>
+			<img src="{{ .image }}" />
+		</div>
+	{{ end }}
+	
 {{ end }}

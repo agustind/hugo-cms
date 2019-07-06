@@ -1,3 +1,6 @@
 baseurl = "/"
 languageCode = "en-us"
-title = "Homepage"
+title = "Supermag"
+[params]
+  	author = "Agu"
+  	description = "This is the description for the site"

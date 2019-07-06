@@ -20,6 +20,19 @@ class ColorControl extends React.Component {
   }
 }
 
+// Example of creating a custom color widget
+class WidgetURL extends React.Component {
+  render() {
+    return <input
+      type="text"
+      placeholder="http://"
+      class="css-83wr9v"
+      value={this.props.value}
+      onInput={(e) => this.props.onChange(e.target.value)}
+    />;
+  }
+}
+
 CMS.registerPreviewStyle("/css/main.css");
 CMS.registerPreviewTemplate("home", HomePreview);
 CMS.registerPreviewTemplate("post", PostPreview);
@@ -27,3 +40,4 @@ CMS.registerPreviewTemplate("products", ProductsPreview);
 CMS.registerPreviewTemplate("values", ValuesPreview);
 CMS.registerPreviewTemplate("contact", ContactPreview);
 CMS.registerWidget("color", ColorControl);
+CMS.registerWidget("url", WidgetURL);
