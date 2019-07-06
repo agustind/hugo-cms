@@ -3,6 +3,13 @@ title: Randstad
 date: 2016-12-17T15:04:10.000Z
 description: App developed in React native for Randstad
 image: /img/blog-flavor_wheel.jpg
+gallery:
+  - caption: This is al old man
+    image: /img/about-direct-sourcing.jpg
+  - caption: This is a machine
+    image: /img/about-jumbotron.jpg
+  - caption: This is a school
+    image: /img/about-reinvest-profits.jpg
 ---
 Irish macchiato, barista, galão dark chicory iced single shot. French press spoon as java chicory crema macchiato. Eu, aftertaste shop grinder, cultivar viennese spoon french press cultivar sweet. Seasonal to go shop siphon mazagran saucer black percolator dripper.
 
