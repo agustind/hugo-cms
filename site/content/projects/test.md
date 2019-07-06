@@ -1,7 +1,7 @@
 ---
 title: test
 date: 2019-07-06T19:22:27.650Z
-url: 'http://google.com'
+link: 'http://google.com'
 client: test
 description: cdscdssd cdscdscds cdscdscsd cdscdscdssdcsd
 gallery:
