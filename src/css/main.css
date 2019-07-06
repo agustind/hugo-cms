@@ -85,3 +85,15 @@
 
 /* Uncomment out the line below to help debug layout issues */
 /*@import './imports/_debug';*/
+
+
+
+.slider{
+	width: 300px;
+	height: 300px;
+}
+
+.slide{
+	width: 300px;
+	height: 300px;
+}

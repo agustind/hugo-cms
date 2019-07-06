@@ -1,10 +1,15 @@
-// JS Goes here - ES6 supported
-if (window.netlifyIdentity) {
-  window.netlifyIdentity.on("init", (user) => {
-    if (!user) {
-      window.netlifyIdentity.on("login", () => {
-        document.location.href = "/admin/";
-      });
-    }
-  });
-}
+window.$ = window.jQuery = require('jquery');
+import { getSlider } from 'simple-slider';
+
+
+$(document).ready(function() {
+    
+    // init slider
+    getSlider({
+	    container: $('.slider')[0],
+	    transitionTime:1,
+	    delay:3.5
+	});
+});
+
+
