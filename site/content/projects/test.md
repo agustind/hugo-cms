@@ -1,9 +1,9 @@
 ---
-title: test
+title: Iamsterdam
 date: 2019-07-06T19:22:27.650Z
-link: 'http://google.com'
-client: test
-description: cdscdssd cdscdscds cdscdscsd cdscdscdssdcsd
+link: 'http://iamsterdam.com'
+client: Iamsterdam
+description: Native mobile app for iOS and Android developed in React Native
 image: /img/about-direct-sourcing.jpg
 gallery:
   - caption: cds cdsocds ockdpskc dspokc dspokcdpsokc dpskcopds kcopds kcpdkoscds pkcds
