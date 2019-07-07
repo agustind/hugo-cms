@@ -1,13 +1,15 @@
 {{ define "main" }}
 
-	{{ range first 4 (where .Data.Pages "Type" "projects") }}
-		<div>
-			{{ .Title }}
-			{{ .Description }}
-			{{ if .Params.image}}
-				<img src="{{ .Params.image }}">
-			{{ end }}
-		</div>
-	{{ end }}
+	<div grid-masonry class="home-projects">
+		{{ range where .Data.Pages "Type" "projects" }}
+			<div class="project">
+				<h2>{{ .Title }}</h2>
+				{{ .Description }}
+				{{ if .Params.image}}
+					<img border-radius src="{{ .Params.image }}">
+				{{ end }}
+			</div>
+		{{ end }}
+	</div>
 	
 {{ end }}

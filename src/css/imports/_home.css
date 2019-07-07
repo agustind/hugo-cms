@@ -1,0 +1,13 @@
+.home-projects .project{
+	max-width: 200px;
+}
+
+.home-projects .project img{
+	margin-top: 20px;
+	max-width: 200px;
+	width: 100%;
+}
+
+.home-projects .project h2{
+	margin-bottom: 20px;
+}

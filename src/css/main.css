@@ -2,12 +2,16 @@
 /* External Library Includes */
 @import './imports/_reset';
 @import './imports/_fonts';
+@import './imports/_layout';
+@import './imports/_images';
 @import './imports/_variables';
 @import './imports/_slider';
+@import './imports/_home';
 
 body{
 	font-family: var(--font-family);
 	font-weight: 300;
+	color: #000;
 }
 
 .wrapper{

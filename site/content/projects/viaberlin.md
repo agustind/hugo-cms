@@ -1,8 +1,8 @@
 ---
-title: Via Berlin
+title: ViaBerlin
 date: 2019-07-10T08:27:41.041Z
 link: 'http://viaberlin.nl'
-client: Via Berlin
+client: ViaBerlin
 description: Wordpress website development
 image: /img/about-reinvest-profits.jpg
 ---
